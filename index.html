@@ -3,143 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faruq | Level 1 Data Engineer</title>
+    <title>Faruq | Data Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="student-theme">
+<body>
 
     <nav class="navbar">
-        <div class="logo">&lt;FARUQ /&gt;</div> <div class="nav-links">
+        <div class="logo">FARUQ</div>
+        <div class="nav-links">
             <a href="#home">Home</a>
-            <a href="#repos">My Code</a>
-            <a href="#education">History</a>
+            <a href="#education">Timeline</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <header id="home" class="hero">
+    <header id="home" class="hero-section">
         <div class="hero-content">
-            <div class="profile-container">
-                <img src="profile.jpg" alt="Wan Faruq Jazli" class="avatar">
-                <div class="status-badge">🟢 Online</div>
+            <div class="profile-frame">
+                <img src="profile.jpg" alt="Wan Faruq Jazli">
             </div>
 
-            <h1 class="glitch-text">Season 1: The Freshman</h1>
-            
-            <div class="tags">
-                <span class="tag red">Lvl 1 Student</span>
-                <span class="tag outline">99% Coffee</span>
-                <span class="tag outline">Bug Hunter</span>
+            <h1 class="hero-title">Wan Faruq Jazli</h1>
+            <div class="hero-badges">
+                <span class="badge red">DATA ENGINEER</span>
+                <span class="badge outline">UTM STUDENT</span>
+                <span class="badge outline">GAMER</span>
             </div>
             
-            <p class="bio-text">
-                > Hello World! 👋 <br>
-                > I am a Data Engineering student at UTM. <br>
-                > Currently trying to survive C++ and 8 AM classes. <br>
-                > My code works (sometimes).
+            <p class="hero-description">
+                Hi there! 👋 I am a first-year Computer Science student building my foundation in C++, Java, and Data Engineering. 
+                Passionate about software development and currently exploring the tech world one line of code at a time.
             </p>
 
-            <div class="buttons">
-                <a href="https://github.com/WanFaruqJazli" target="_blank" class="btn primary">
-                    <i class="fab fa-github"></i> Check My Repo
+            <div class="hero-buttons">
+                <a href="https://www.linkedin.com/in/wan-faruq-jazli-9a863b387/" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-linkedin"></i> Connect
                 </a>
-                <a href="mailto:wanfaruqjazli30@gmail.com" class="btn secondary">
-                    <i class="fas fa-paper-plane"></i> Send Email
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fas fa-code"></i> View Code
                 </a>
             </div>
         </div>
     </header>
 
-    <section class="section">
-        <h2 class="section-title">My Inventory (Skills)</h2>
-        <div class="skill-grid">
-            <div class="skill-card">👾 C++</div>
-            <div class="skill-card">☕ Java</div>
-            <div class="skill-card">🎨 Canva</div>
-            <div class="skill-card">📝 Word</div>
-            <div class="skill-card">⚔️ Mobile Legends</div>
-            <div class="skill-card">💻 VS Code</div>
+    <section class="content-row">
+        <h2 class="row-title">Top Picks for You: Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card"><i class="fas fa-code"></i> C++</div>
+            <div class="skill-card"><i class="fab fa-java"></i> Java</div>
+            <div class="skill-card"><i class="fas fa-laptop-code"></i> VS Code</div>
+            <div class="skill-card"><i class="fas fa-paint-brush"></i> Canva</div>
+            <div class="skill-card"><i class="fas fa-language"></i> English (Pro)</div>
+            <div class="skill-card"><i class="fas fa-comment"></i> Malay (Native)</div>
         </div>
     </section>
 
-    <section id="repos" class="section">
-        <h2 class="section-title">Mission Log (Assignments)</h2>
-        <div class="card-scroller">
+    <section id="education" class="content-row">
+        <h2 class="row-title">Academic Timeline</h2>
+        <div class="cards-grid">
             
-            <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECR1013-Digital-Logic" target="_blank" class="card">
-                <div class="card-top logic-bg">
+            <div class="info-card">
+                <div class="card-header utm-bg">
+                    <h3>2025 - Present</h3>
+                </div>
+                <div class="card-body">
+                    <h4>Universiti Teknologi Malaysia</h4>
+                    <p>Bachelor of Computer Science (Data Engineering)</p>
+                    <span class="highlight">Current Season</span>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="card-header kmj-bg">
+                    <h3>2024 - 2025</h3>
+                </div>
+                <div class="card-body">
+                    <h4>Kolej Matrikulasi Johor</h4>
+                    <p>Physical Science</p>
+                    <p class="sub-text">CGPA: 3.92 | MUET: Band 4.0</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="card-header smk-bg">
+                    <h3>2019 - 2024</h3>
+                </div>
+                <div class="card-body">
+                    <h4>SMK Chukai</h4>
+                    <p>SPM: 7A</p>
+                    <p class="sub-text">Treasurer & President of RBT</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="content-row">
+        <h2 class="row-title">Now Streaming: Coursework</h2>
+        <div class="repo-grid">
+
+            <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECR1013-Digital-Logic" target="_blank" class="repo-card">
+                <div class="repo-thumbnail">
                     <i class="fas fa-microchip"></i>
                 </div>
-                <div class="card-bottom">
+                <div class="repo-info">
                     <h3>Digital Logic</h3>
-                    <p>Learning how computers actually think (0s & 1s).</p>
-                    <span class="mini-tag">SECR1013</span>
+                    <p>SECR1013</p>
                 </div>
             </a>
 
-            <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECJ1013-Programming-1" target="_blank" class="card">
-                <div class="card-top code-bg">
-                    <i class="fas fa-code"></i>
-                </div>
-                <div class="card-bottom">
-                    <h3>Prog. Tech 1</h3>
-                    <p>My C++ Playground. Fixing syntax errors daily.</p>
-                    <span class="mini-tag">SECJ1013</span>
-                </div>
-            </a>
-
-            <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECP1513-TIS" target="_blank" class="card">
-                <div class="card-top sys-bg">
+            <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECP1513-TIS" target="_blank" class="repo-card">
+                <div class="repo-thumbnail">
                     <i class="fas fa-network-wired"></i>
                 </div>
-                <div class="card-bottom">
-                    <h3>Tech Systems</h3>
-                    <p>Exploring hardware, cloud, and IT systems.</p>
-                    <span class="mini-tag">SECP1513</span>
+                <div class="repo-info">
+                    <h3>Tech & Info Systems</h3>
+                    <p>SECP1513</p>
                 </div>
             </a>
 
-             <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECI1013-Discrete-Structure" target="_blank" class="card">
-                <div class="card-top math-bg">
-                    <i class="fas fa-calculator"></i>
+            <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECJ1013-Programming-1" target="_blank" class="repo-card">
+                <div class="repo-thumbnail">
+                    <i class="fas fa-terminal"></i>
                 </div>
-                <div class="card-bottom">
-                    <h3>Discrete Math</h3>
-                    <p>Logic, Sets, and Graphs. The math behind the code.</p>
-                    <span class="mini-tag">SECI1013</span>
+                <div class="repo-info">
+                    <h3>Programming Tech 1</h3>
+                    <p>SECJ1013</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECI1013-Discrete-Structure" target="_blank" class="repo-card">
+                <div class="repo-thumbnail">
+                    <i class="fas fa-square-root-alt"></i>
+                </div>
+                <div class="repo-info">
+                    <h3>Discrete Structure</h3>
+                    <p>SECI1013</p>
+                </div>
+            </a>
+
+             <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/ULRS1032-Integrity%20and%20Anti-Corruption" target="_blank" class="repo-card">
+                <div class="repo-thumbnail">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="repo-info">
+                    <h3>Integrity & Corruption</h3>
+                    <p>ULRS1032</p>
                 </div>
             </a>
 
         </div>
     </section>
 
-    <section id="education" class="section">
-        <h2 class="section-title">Character Backstory</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="dot"></div>
-                <h3>Universiti Teknologi Malaysia</h3>
-                <p>2025 - Present | <strong>Data Engineering</strong></p>
-                <p><em>Current Mission: Get that Degree!</em></p>
-            </div>
-            <div class="timeline-item">
-                <div class="dot"></div>
-                <h3>Kolej Matrikulasi Johor</h3>
-                <p>2024 - 2025 | <strong>CGPA: 3.92</strong></p>
-                <p><em>Achievement Unlocked: Physical Science completed.</em></p>
-            </div>
-            <div class="timeline-item">
-                <div class="dot"></div>
-                <h3>SMK Chukai</h3>
-                <p>2019 - 2024 | <strong>SPM: 7A</strong></p>
-                <p><em>Origin Story. Ex-President of RBT Club.</em></p>
-            </div>
+    <section class="content-row">
+        <h2 class="row-title">Cast & Achievements</h2>
+        <div class="list-container">
+            <ul>
+                <li><span>👑</span> <strong>Committee Member:</strong> SUSKOM'25 (UTM)</li>
+                <li><span>🎮</span> <strong>E-Sports Athlete:</strong> UTMGames (Mobile Legends: Bang Bang)</li>
+                <li><span>🗳️</span> <strong>Equipment Bureau:</strong> KMJ College Election (2024)</li>
+                <li><span>🧪</span> <strong>Participant:</strong> National Chemistry Quiz (2023)</li>
+                <li><span>👀</span> <strong>Audience:</strong> ASEAN Quantum Summit 2025</li>
+            </ul>
         </div>
     </section>
 
-    <footer>
-        <p>insert coin to continue...</p>
-        <p>© 2025 Wan Faruq Jazli • Level 1 Developer</p>
+    <section class="content-row">
+        <h2 class="row-title">Activity Log</h2>
+        <div class="github-graph">
+            <img src="https://github-readme-activity-graph.vercel.app/graph?username=WanFaruqJazli&bg_color=141414&color=E50914&line=E50914&point=ffffff&area=true&hide_border=true" alt="GitHub Activity">
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="social-links">
+            <a href="mailto:wanfaruqjazli30@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/WanFaruqJazli" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/wan-faruq-jazli-9a863b387/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>© 2025 Wan Faruq Jazli • Crafted with HTML & CSS</p>
     </footer>
 
 </body>
