@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wan Faruq Jazli | Data Engineer</title>
     <link rel="stylesheet" href="style.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <div class="menu-items">
+            <a href="about.html" onclick="toggleMenu()">About Me</a>
+            <a href="#education" onclick="toggleMenu()">Education Journey</a>
+            <a href="tis_coursework.html" onclick="toggleMenu()">TIS Assignments & Projects</a>
+            <a href="mailto:wanfaruqjazli30@gmail.com">Contact</a>
+        </div>
+    </div>
+
     <nav class="navbar">
-        <div class="logo">WFJ.</div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#coursework">Coursework</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
+        <a href="index.html" class="logo">WFJ.</a>
+        
+        <div class="menu-btn" onclick="toggleMenu()">
+            MENU <i class="fa-solid fa-bars"></i>
         </div>
     </nav>
 
-    <header class="hero" id="about">
+    <header class="hero">
         <div class="hero-content">
             <div class="profile-container">
                 <img src="images/myself.jpeg" alt="Wan Faruq Jazli" class="profile-frame">
@@ -49,109 +55,34 @@
 
     <main>
 
-        <section id="coursework" class="category-row">
-            <h2 class="category-title">Coursework Repositories</h2>
-            <div class="card-scroller">
-                
-                <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECR1013-Digital-Logic" target="_blank" class="card">
-                    <div class="card-image logic-bg">
-                        <i class="fa-solid fa-microchip"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Digital Logic</h3>
-                        <p>Logic Gates & Circuits</p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECJ1013-Programming-1" target="_blank" class="card">
-                    <div class="card-image cpp-bg">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Programming Tech I</h3>
-                        <p>C++ Problem Solving</p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECP1513-TIS" target="_blank" class="card">
-                    <div class="card-image tis-bg">
-                        <i class="fa-solid fa-network-wired"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Tech & Info Systems</h3>
-                        <p>Design Thinking & IS</p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/SECI1013-Discrete-Structure" target="_blank" class="card">
-                    <div class="card-image math-bg">
-                        <i class="fa-solid fa-diagram-project"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Discrete Structure</h3>
-                        <p>Set Theory & Logic</p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/WanFaruqJazli/Year1-Sem1-Coursework/tree/main/ULRS1032-Integrity%20and%20Anti-Corruption" target="_blank" class="card">
-                    <div class="card-image ethics-bg">
-                        <i class="fa-solid fa-scale-balanced"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Integrity</h3>
-                        <p>Ethics & Anti-Corruption</p>
-                    </div>
-                </a>
-
-            </div>
-        </section>
-
         <section id="education" class="content-block">
             <h2 class="category-title">Education Journey</h2>
             <div class="list-container">
-                <div class="list-item">
+                
+                <a href="education_utm.html" class="list-item">
                     <div class="year">2025 - Present</div>
                     <div class="details">
                         <h3>Universiti Teknologi Malaysia (UTM)</h3>
                         <p>Bachelor of Computer Science (Data Engineering) with Honors</p>
                     </div>
-                </div>
-                <div class="list-item">
+                </a>
+                
+                <a href="education_kmj.html" class="list-item">
                     <div class="year">2024 - 2025</div>
                     <div class="details">
                         <h3>Kolej Matrikulasi Johor (KMJ)</h3>
                         <p>Physical Science • CGPA: 3.92 • MUET: Band 4.0</p>
                     </div>
-                </div>
-                <div class="list-item">
+                </a>
+
+                <a href="education_smkchukai.html" class="list-item">
                     <div class="year">2019 - 2024</div>
                     <div class="details">
                         <h3>SMK Chukai</h3>
                         <p>SPM: 7A</p>
                     </div>
-                </div>
-            </div>
-        </section>
+                </a>
 
-        <section id="leadership" class="grid-2-col">
-            
-            <div class="text-box">
-                <h2 class="category-title">Leadership</h2>
-                <ul class="styled-list">
-                    <li><strong>UTM:</strong> Committee Member SUSKOM'25, E-Sports Athlete (MLBB)</li>
-                    <li><strong>KMJ:</strong> Committee Member (Equipment Bureau) College Election</li>
-                    <li><strong>SMK Chukai:</strong> President of RBT Club (2024), Treasurer (2023)</li>
-                </ul>
-            </div>
-
-            <div class="text-box">
-                <h2 class="category-title">Awards & Participation</h2>
-                <ul class="styled-list">
-                    <li>Crew for SUSKOM'25 @ UTM</li>
-                    <li>Athlete for UTMGames @ UTM</li>
-                    <li>Audience at ASEAN Quantum Summit 2025</li>
-                    <li>Participant: Malaysian National Chemistry Quiz (2023)</li>
-                </ul>
             </div>
         </section>
 
@@ -162,7 +93,6 @@
                 <span class="tag red">Java</span>
                 <span class="tag gray">Visual Studio Code</span>
                 <span class="tag gray">Canva</span>
-                <span class="tag gray">Microsoft Word</span>
                 <span class="tag white">Bahasa Melayu</span>
                 <span class="tag white">English</span>
             </div>
@@ -178,5 +108,11 @@
         </div>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuOverlay');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
