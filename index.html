@@ -13,7 +13,8 @@
     <div class="menu-overlay" id="menuOverlay">
         <div class="close-btn" onclick="toggleMenu()">&times;</div>
         <div class="menu-items">
-            <a href="#about" onclick="toggleMenu()">About Me</a>
+            <a href="about.html">About Me</a>
+            
             <a href="#skills" onclick="toggleMenu()">Skills</a>
             <a href="#courses-section" onclick="toggleMenu()">Academic Courses</a>
             <a href="#education" onclick="toggleMenu()">Education Journey</a>
@@ -78,7 +79,7 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-rocket icon-red"></i> 
-                        Aspires to become a Data Engineer and work at my dream company ( Petronas ).
+                        Aspires to become a Data Engineer and work at my dream company.
                     </li>
                 </ul>
             </div>
@@ -142,15 +143,15 @@
                         <div class="year-label">Year 1</div>
                     </div>
                     <div class="year-card locked">
-                        <i class="fa-solid fa-lock"></i>
+                        <i class="fa-solid fa-hourglass"></i>
                         <div class="year-label">Year 2</div>
                     </div>
                     <div class="year-card locked">
-                        <i class="fa-solid fa-lock"></i>
+                        <i class="fa-solid fa-hourglass"></i>
                         <div class="year-label">Year 3</div>
                     </div>
                     <div class="year-card locked">
-                        <i class="fa-solid fa-lock"></i>
+                        <i class="fa-solid fa-hourglass"></i>
                         <div class="year-label">Year 4</div>
                     </div>
                 </div>
@@ -162,12 +163,13 @@
                     <p class="view-subtitle">Year 1 - Select Semester</p>
                 </div>
                 
-                <div class="year-grid"> <div class="year-card active" onclick="showRepos()">
+                <div class="year-grid"> 
+                    <div class="year-card active" onclick="showRepos()">
                         <i class="fa-solid fa-book-open" style="font-size: 3rem; color: var(--netflix-red); margin-bottom: 10px;"></i>
                         <div class="year-label">Semester 1</div>
                     </div>
                     <div class="year-card locked">
-                        <i class="fa-solid fa-lock"></i>
+                        <i class="fa-solid fa-hourglass"></i>
                         <div class="year-label">Semester 2</div>
                     </div>
                 </div>
@@ -276,6 +278,7 @@
         // Logic for Academic Courses Navigation
         function showSemesters() {
             document.getElementById('year-view').classList.add('hidden');
+            document.getElementById('repo-view').classList.add('hidden');
             document.getElementById('semester-view').classList.remove('hidden');
         }
 
@@ -287,11 +290,6 @@
         function showRepos() {
             document.getElementById('semester-view').classList.add('hidden');
             document.getElementById('repo-view').classList.remove('hidden');
-        }
-
-        function showSemestersFromRepo() { // Optional if you want back button on repo view to go to Semesters
-            document.getElementById('repo-view').classList.add('hidden');
-            document.getElementById('semester-view').classList.remove('hidden');
         }
     </script>
 </body>
