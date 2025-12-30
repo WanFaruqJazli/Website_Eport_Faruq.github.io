@@ -14,7 +14,6 @@
         <div class="close-btn" onclick="toggleMenu()">&times;</div>
         <div class="menu-items">
             <a href="about.html">About Me</a>
-            
             <a href="#skills" onclick="toggleMenu()">Skills</a>
             <a href="#courses-section" onclick="toggleMenu()">Academic Courses</a>
             <a href="#education" onclick="toggleMenu()">Education Journey</a>
@@ -57,7 +56,7 @@
 
     <main>
 
-        <section id="about" class="content-block">
+        <section id="about" class="content-block hidden-section">
             <h2 class="category-title">About Me</h2>
             <div class="about-card">
                 <ul class="about-list">
@@ -85,7 +84,7 @@
             </div>
         </section>
 
-        <section id="skills" class="content-block">
+        <section id="skills" class="content-block hidden-section">
             <h2 class="category-title">My Skills</h2>
             <div class="skills-grid">
                 
@@ -132,7 +131,7 @@
             </div>
         </section>
 
-        <section id="courses-section" class="category-row">
+        <section id="courses-section" class="category-row content-block hidden-section">
             <h2 class="category-title">Academic Courses</h2>
 
             <div id="year-view" class="view-container">
@@ -228,7 +227,7 @@
 
         </section>
 
-        <section id="education" class="content-block">
+        <section id="education" class="content-block hidden-section">
             <h2 class="category-title">Education Journey</h2>
             <div class="list-container">
                 
@@ -291,6 +290,28 @@
             document.getElementById('semester-view').classList.add('hidden');
             document.getElementById('repo-view').classList.remove('hidden');
         }
+
+        // --- SCROLL ANIMATION SCRIPT ---
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15 // Trigger when 15% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-section');
+                    observer.unobserve(entry.target); // Stop watching once shown
+                }
+            });
+        }, observerOptions);
+
+        // Select all elements with hidden-section class
+        const hiddenSections = document.querySelectorAll('.hidden-section');
+        hiddenSections.forEach(section => {
+            observer.observe(section);
+        });
     </script>
 </body>
 </html>
