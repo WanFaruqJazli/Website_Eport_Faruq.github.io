@@ -30,19 +30,16 @@
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <div class="profile-container">
-                <img src="images/myself.jpeg" alt="Wan Faruq Jazli" class="profile-frame">
-            </div>
+        <div class="hero-content" style="text-align: center; justify-content: center; flex-direction: column;">
             
-            <div class="hero-text">
+            <div class="hero-text" style="flex: 0 0 auto; text-align: center;">
                 <h2 class="sub-title">ASPIRING DATA ENGINEER</h2>
                 <h1 class="main-title">WAN FARUQ JAZLI</h1>
-                <p class="description">
+                <p class="description" style="margin: 0 auto 30px auto;">
                     First-year Computer Science student at UTM. Passionate about software development and data engineering. 
                     Currently building my foundation in C++, Java, and Computer Science principles.
                 </p>
-                <div class="hero-buttons">
+                <div class="hero-buttons" style="justify-content: center;">
                     <a href="mailto:wanfaruqjazli30@gmail.com" class="btn btn-red">
                         <i class="fa-solid fa-envelope"></i> Contact Me
                     </a>
@@ -51,7 +48,6 @@
                     </a>
                     <a href="https://github.com/WanFaruqJazli" target="_blank" class="btn btn-dark">
                         <i class="fa-brands fa-github"></i> Github
-                        
                     </a>
                 </div>
             </div>
@@ -101,6 +97,9 @@
                         <span>Java</span> <span class="badge">Basic</span>
                     </div>
                     <div class="skill-item">
+                        <span>Git / GitHub</span> <span class="badge">Basic</span>
+                    </div>
+                    <div class="skill-item">
                         <span>Microsoft Office</span> <span class="badge">Proficient</span>
                     </div>
                     <div class="skill-item">
@@ -119,7 +118,7 @@
                     <div class="skill-list-simple">
                         <p>Teamwork</p>
                         <p>Time management</p>
-                        <p>Adaptabilty</p>
+                        <p>Adaptability</p>
                         <p>Problem-solving</p>
                         <p>Communication</p>
                     </div>
@@ -302,19 +301,18 @@
         const observerOptions = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.15 // Trigger when 15% of the element is visible
+            threshold: 0.15 
         };
 
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show-section');
-                    observer.unobserve(entry.target); // Stop watching once shown
+                    observer.unobserve(entry.target); 
                 }
             });
         }, observerOptions);
 
-        // Select all elements with hidden-section class
         const hiddenSections = document.querySelectorAll('.hidden-section');
         hiddenSections.forEach(section => {
             observer.observe(section);
