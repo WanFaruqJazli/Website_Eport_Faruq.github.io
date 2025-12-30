@@ -583,3 +583,15 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* --- SCROLL ANIMATION --- */
+.hidden-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.show-section {
+    opacity: 1;
+    transform: translateY(0);
+}
